@@ -10,7 +10,6 @@
     ],
     "format-version": "0.1",
     "license": "MIT",
-    "release": "0.1",
     "name": "CUTandRUNnochrM",
     "steps": {
         "0": {
@@ -30,7 +29,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 268
+                "top": 268.0
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"\", \"collection_type\": \"list:paired\"}",
@@ -56,7 +55,7 @@
             "outputs": [],
             "position": {
                 "left": 22,
-                "top": 375
+                "top": 375.0
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -82,7 +81,7 @@
             "outputs": [],
             "position": {
                 "left": 62,
-                "top": 483
+                "top": 483.0
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -108,7 +107,7 @@
             "outputs": [],
             "position": {
                 "left": 128,
-                "top": 589
+                "top": 589.0
             },
             "tool_id": null,
             "tool_state": "{\"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": false}",
@@ -134,7 +133,7 @@
             "outputs": [],
             "position": {
                 "left": 176,
-                "top": 689
+                "top": 689.0
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"integer\", \"optional\": false}",
@@ -177,7 +176,7 @@
             ],
             "position": {
                 "left": 288,
-                "top": 180
+                "top": 180.0
             },
             "post_job_actions": {
                 "HideDatasetActionout_pairs": {
@@ -241,7 +240,7 @@
             ],
             "position": {
                 "left": 559,
-                "top": 102
+                "top": 102.0
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -279,7 +278,7 @@
                 {
                     "label": "Mapping stats",
                     "output_name": "mapping_stats",
-                    "uuid": "fe055d7b-ec03-482b-a0c1-a639b2e0a19b"
+                    "uuid": "a817cd57-e42e-4545-9f10-a189206602e6"
                 }
             ]
         },
@@ -298,10 +297,6 @@
                 {
                     "description": "runtime parameter for tool Filter SAM or BAM, output SAM or BAM",
                     "name": "bed_file"
-                },
-                {
-                    "description": "runtime parameter for tool Filter SAM or BAM, output SAM or BAM",
-                    "name": "input1"
                 }
             ],
             "label": "filter MAPQ30 concordent pairs",
@@ -314,7 +309,7 @@
             ],
             "position": {
                 "left": 834,
-                "top": 23
+                "top": 23.0
             },
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -337,7 +332,7 @@
                 "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"bed_file\": {\"__class__\": \"RuntimeValue\"}, \"flag\": {\"filter\": \"yes\", \"__current_case__\": 1, \"reqBits\": [\"0x0002\"], \"skipBits\": null}, \"header\": \"-h\", \"input1\": {\"__class__\": \"RuntimeValue\"}, \"library\": \"\", \"mapq\": \"30\", \"outputtype\": \"bam\", \"possibly_select_inverse\": \"false\", \"read_group\": \"\", \"regions\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"bed_file\": {\"__class__\": \"RuntimeValue\"}, \"flag\": {\"filter\": \"yes\", \"__current_case__\": 1, \"reqBits\": [\"0x0002\"], \"skipBits\": null}, \"header\": \"-h\", \"input1\": {\"__class__\": \"ConnectedValue\"}, \"library\": \"\", \"mapq\": \"30\", \"outputtype\": \"bam\", \"possibly_select_inverse\": \"false\", \"read_group\": \"\", \"regions\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.8+galaxy1",
             "type": "tool",
             "uuid": "b04312a6-1680-4d8e-9c70-f30f2d2be3cc",
@@ -395,10 +390,10 @@
                 "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"conditions\": [{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"bam_property_selector\": \"reference\", \"__current_case__\": 20, \"bam_property_value\": \"!chrM\"}}, {\"__index__\": 1, \"bam_property\": {\"bam_property_selector\": \"reference\", \"__current_case__\": 20, \"bam_property_value\": \"!MT\"}}]}], \"input_bam\": {\"__class__\": \"RuntimeValue\"}, \"rule_configuration\": {\"rules_selector\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"conditions\": [{\"__index__\": 0, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"bam_property_selector\": \"reference\", \"__current_case__\": 20, \"bam_property_value\": \"!chrM\"}}]}, {\"__index__\": 1, \"filters\": [{\"__index__\": 0, \"bam_property\": {\"bam_property_selector\": \"reference\", \"__current_case__\": 20, \"bam_property_value\": \"!MT\"}}]}], \"input_bam\": {\"__class__\": \"RuntimeValue\"}, \"rule_configuration\": {\"rules_selector\": \"true\", \"__current_case__\": 1, \"rules\": \"1 & 2\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.5.1+galaxy0",
             "type": "tool",
-            "uuid": "d46990cb-c670-4daf-bae7-7d8fe9962718",
+            "uuid": "2a263de5-8f87-4765-b18d-6198b2390304",
             "workflow_outputs": []
         },
         "9": {
@@ -412,12 +407,7 @@
                     "output_name": "out_file1"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool MarkDuplicates",
-                    "name": "inputFile"
-                }
-            ],
+            "inputs": [],
             "label": "remove PCR ducplicates",
             "name": "MarkDuplicates",
             "outputs": [
@@ -432,7 +422,7 @@
             ],
             "position": {
                 "left": 1112,
-                "top": 64
+                "top": 64.0
             },
             "post_job_actions": {
                 "RenameDatasetActionmetrics_file": {
@@ -457,7 +447,7 @@
                 "owner": "devteam",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"assume_sorted\": \"true\", \"barcode_tag\": \"\", \"comments\": [], \"duplicate_scoring_strategy\": \"SUM_OF_BASE_QUALITIES\", \"inputFile\": {\"__class__\": \"RuntimeValue\"}, \"optical_duplicate_pixel_distance\": \"100\", \"read_name_regex\": \"\", \"remove_duplicates\": \"false\", \"validation_stringency\": \"LENIENT\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"assume_sorted\": \"true\", \"barcode_tag\": \"\", \"comments\": [], \"duplicate_scoring_strategy\": \"SUM_OF_BASE_QUALITIES\", \"inputFile\": {\"__class__\": \"ConnectedValue\"}, \"optical_duplicate_pixel_distance\": \"100\", \"read_name_regex\": \"\", \"remove_duplicates\": \"false\", \"validation_stringency\": \"LENIENT\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.18.2.3",
             "type": "tool",
             "uuid": "7f78ad5a-5250-4ced-aa7f-cf0802051c82",
@@ -465,12 +455,12 @@
                 {
                     "label": "BAM filtered rmDup",
                     "output_name": "outFile",
-                    "uuid": "235e2fd4-182c-4c98-bc32-d4c86bedd19b"
+                    "uuid": "71831c36-4095-4ff3-9d4a-d922898bdfdc"
                 },
                 {
                     "label": "MarkDuplicates metrics",
                     "output_name": "metrics_file",
-                    "uuid": "10f1de3b-f521-40c2-b721-c20491c6df02"
+                    "uuid": "f660e908-e027-4ef4-ab03-a4add78d00a2"
                 }
             ]
         },
@@ -496,7 +486,7 @@
             ],
             "position": {
                 "left": 1387,
-                "top": 37
+                "top": 37.0
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -571,7 +561,7 @@
             ],
             "position": {
                 "left": 1656,
-                "top": 3
+                "top": 3.0
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_control_lambda": {
@@ -638,19 +628,19 @@
             "uuid": "1a6316d7-3ee1-482a-9264-77bc98090d73",
             "workflow_outputs": [
                 {
-                    "label": "MACS2 summits",
-                    "output_name": "output_summits",
-                    "uuid": "6ba6f169-a8ca-4525-be69-8963acb5591a"
-                },
-                {
                     "label": "MACS2 narrowPeak",
                     "output_name": "output_narrowpeaks",
-                    "uuid": "3916a722-bce6-4ec6-b79a-b0a54dcbbe44"
+                    "uuid": "aa10f88a-506d-407b-9df0-ed1240eedbd8"
                 },
                 {
                     "label": "MACS2 peaks xls",
                     "output_name": "output_tabular",
-                    "uuid": "3f0551e9-e148-4dcf-9409-e09563b22edd"
+                    "uuid": "2f2ac3e6-eff3-417b-8cb8-2d8030aabd55"
+                },
+                {
+                    "label": "MACS2 summits",
+                    "output_name": "output_summits",
+                    "uuid": "784b8390-04eb-4af1-a1b8-6e9c3e5a0c4a"
                 }
             ]
         },
@@ -676,7 +666,7 @@
             ],
             "position": {
                 "left": 1946,
-                "top": 0
+                "top": 0.0
             },
             "post_job_actions": {
                 "ChangeDatatypeActionoutput": {
@@ -709,7 +699,7 @@
                 {
                     "label": "MACS2 report",
                     "output_name": "output",
-                    "uuid": "c8f78f3d-5878-4e98-9f4f-89cddeda2d74"
+                    "uuid": "ccf6c2ae-23c3-4bb9-98fa-dc9f47979798"
                 }
             ]
         },
@@ -735,7 +725,7 @@
             ],
             "position": {
                 "left": 1945,
-                "top": 139
+                "top": 139.0
             },
             "post_job_actions": {
                 "RenameDatasetActionout_file1": {
@@ -755,7 +745,7 @@
                 {
                     "label": "Coverage from MACS2 (bigwig)",
                     "output_name": "out_file1",
-                    "uuid": "7f192a3b-af4b-4724-a0e2-dd575676b409"
+                    "uuid": "92f09523-cf37-43f0-8937-80f2d720a074"
                 }
             ]
         },
@@ -801,7 +791,7 @@
             ],
             "position": {
                 "left": 1936,
-                "top": 415
+                "top": 415.0
             },
             "post_job_actions": {
                 "HideDatasetActionplots": {
@@ -823,14 +813,14 @@
             "uuid": "0edf5e04-cc38-414c-9b57-117e919c435b",
             "workflow_outputs": [
                 {
-                    "label": "MultiQC webpage",
-                    "output_name": "html_report",
-                    "uuid": "9cd5e20a-7bb4-48c3-bce0-f94e60580b9f"
-                },
-                {
                     "label": "MultiQC on input dataset(s): Stats",
                     "output_name": "stats",
-                    "uuid": "7e53121b-1907-404b-9dc3-25e1aff63814"
+                    "uuid": "e8efe258-b812-4025-87c6-6200cb13ad53"
+                },
+                {
+                    "label": "MultiQC webpage",
+                    "output_name": "html_report",
+                    "uuid": "a0f0e256-b3fb-4004-9df5-44b14dfe475d"
                 }
             ]
         }
@@ -838,6 +828,6 @@
     "tags": [
         "CUTnRUN"
     ],
-    "uuid": "63332f18-cb8f-443b-9d4b-a45a9aa6d553",
-    "version": 1
+    "uuid": "dc34fca7-0f25-49d1-ab56-b7570d9bf417",
+    "version": 3
 }
