@@ -11,7 +11,7 @@
     "format-version": "0.1",
     "license": "MIT",
     "release": "0.1",
-    "name": "CUTandRUN",
+    "name": "cutandrun",
     "steps": {
         "0": {
             "annotation": "Should be a paired collection with CUT and RUN fastqs",
