@@ -1,0 +1,30 @@
+- doc: Test outline for Hi-C_tabixToCool_cooler
+  job:
+    Tabix with validPairs:
+      class: Collection
+      collection_type: list
+      elements:
+      - class: File
+        identifier: HiC_S2_1p_10min_lowU
+        path: test-data/Tabix with validPairs_HiC_S2_1p_10min_lowU.tabix
+        filetype: interval
+        metadata:
+          - chromColumn: 3
+          - startColumn: 4
+          - startColumn: 5
+    Bin size in bp: 10000
+    genome name: dm6
+    Column number for chromosome 1: 3
+    Column number for position 1: 4
+    Column number for chromosome 2: 7
+    Column number for position 2: 8
+    Interactions to consider to calculate weights in normalization step: --cis-only
+  outputs:
+    matrix with raw values:
+      element_tests:
+        HiC_S2_1p_10min_lowU:
+          path: test-data/matrix with raw values_HiC_S2_1p_10min_lowU.cool
+    matrix with iced values:
+      element_tests:
+        HiC_S2_1p_10min_lowU:
+          path: test-data/matrix with iced values_HiC_S2_1p_10min_lowU.cool
