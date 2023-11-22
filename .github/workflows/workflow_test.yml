@@ -1,7 +1,7 @@
 # workflow level env vars cannot be used at the job level
 # https://github.community/t/how-to-set-and-access-a-workflow-variable/17335/15
 name: Galaxy Workflow Tests for push and PR
-on: [push, pull_request]
+on: [push, pull_request_target]
 env:
   GITHUB_USER: iwc-workflows-bot
 jobs:
@@ -113,8 +113,7 @@ jobs:
       uses: peter-evans/create-or-update-comment@v3
       with:
         token: ${{ secrets.PAT }}
-        GITHUB_USER: lldelisle
-        issue-number: ${{ steps.findPr.outputs.pr }}
+        issue-number: ${{ github.event.number || steps.findPr.outputs.pr }}
         body-path: upload/tool_test_output.md
 
   # deploy workflows to organization
