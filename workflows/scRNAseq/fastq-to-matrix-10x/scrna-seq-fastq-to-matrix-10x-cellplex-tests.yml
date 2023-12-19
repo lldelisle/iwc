@@ -10,11 +10,11 @@
         elements:
         - identifier: forward
           class: File
-          location: https://zenodo.org/records/10229382/files/subSample_GEX_R1.fastq.gz
+          path: test-data/GEX_R1.fastqsanger.gz
           filetype: fastqsanger.gz
         - identifier: reverse
           class: File
-          location: https://zenodo.org/records/10229382/files/subSample_GEX_R2.fastq.gz
+          path: test-data/GEX_R2.fastqsanger.gz
           filetype: fastqsanger.gz
     reference genome: dm6
     gtf:
@@ -24,8 +24,7 @@
       filetype: gtf
     cellranger_barcodes_3M-february-2018.txt:
       class: File
-      path: test-data/all_cell_barcodes_translated.txt
-      decompress: true
+      path: test-data/all_cell_barcodes_both_versions.txt
       filetype: tabular
     fastq PE collection CMO:
       class: Collection
@@ -37,11 +36,11 @@
         elements:
         - identifier: forward
           class: File
-          location: https://zenodo.org/records/10229382/files/subSample_CMO_R1.fastq.gz
+          path: test-data/CMO_R1.fastqsanger.gz
           filetype: fastqsanger.gz
         - identifier: reverse
           class: File
-          location: https://zenodo.org/records/10229382/files/subSample_CMO_R2.fastq.gz
+          path: test-data/CMO_R2.fastqsanger.gz
           filetype: fastqsanger.gz
     sample name and CMO sequence collection:
       class: Collection

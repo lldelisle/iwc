@@ -24,8 +24,7 @@
       filetype: gtf
     cellranger_barcodes_3M-february-2018.txt:
       class: File
-      location: https://zenodo.org/record/3457880/files/3M-february-2018.txt.gz
-      decompress: true
+      path: test-data/all_cell_barcodes_both_versions.txt
       filetype: tabular
   outputs:
     'MultiQC on input dataset(s): Webpage':
