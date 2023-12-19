@@ -57,7 +57,7 @@
       class: File
       asserts:
         - that: "has_text_matching"
-          expression: "<tbody><tr><th class=\"rowheader\" data-original-sn=\"subsample\">subsample</th><td class=\"data-coloured mqc-generalstats-star-uniquely_mapped_percent \"><div class=\"wrapper\"><span class=\"bar\" style=\"width:3[0-9].[0-9]%; background-color:#bbd9c6;\"></span><span class=\"val\">3[0-9].[0-9]%</span></div></td><td class=\"data-coloured mqc-generalstats-star-uniquely_mapped \"><div class=\"wrapper\"><span class=\"bar\" style=\"width:100.0%; background-color:#d1b3bc;\"></span><span class=\"val\">[0-9].[0-9]</span></div></td></tr></tbody>"
+          expression: "<tbody><tr><th class=\"rowheader\" data-original-sn=\"subsample\">subsample</th><td class=\"data-coloured mqc-generalstats-star-uniquely_mapped_percent \"><div class=\"wrapper\"><span class=\"bar\" style=\"width:3[0-9].[0-9]%; background-color:#ebf7df;\"></span><span class=\"val\">3[0-9].[0-9]%</span></div></td><td class=\"data-coloured mqc-generalstats-star-uniquely_mapped \"><div class=\"wrapper\"><span class=\"bar\" style=\"width:100.0%; background-color:#d1b3bc;\"></span><span class=\"val\">[0-9].[0-9]</span></div></td></tr></tbody>"
     Seurat input for gene expression (filtered):
       class: Collection
       collection_type: list:list
