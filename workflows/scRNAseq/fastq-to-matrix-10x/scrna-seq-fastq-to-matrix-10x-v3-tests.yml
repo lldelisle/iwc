@@ -16,10 +16,10 @@
           class: File
           location: https://zenodo.org/records/10229382/files/subSample_GEX_R2.fastq.gz
           filetype: fastqsanger.gz
-    reference genome: mm10 # mm10full # To test on usegalaxy.eu
+    reference genome: dm6
     gtf:
       class: File
-      location: https://zenodo.org/records/10079673/files/mm10_custom102_allGastruloids_min10_extended.gtf.gz
+      location: https://zenodo.org/record/6457007/files/Drosophila_melanogaster.BDGP6.32.109_UCSC.gtf.gz
       decompress: true
       filetype: gtf
     cellranger_barcodes_3M-february-2018.txt:
