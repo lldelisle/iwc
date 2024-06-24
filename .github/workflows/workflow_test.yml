@@ -47,7 +47,7 @@ jobs:
     - name: IWC specific lint
       run: |
         wd=$PWD/
-        for REPO in ${{ needs.setup.outputs.repository-list }}; do
+        for REPO in "${{ needs.setup.outputs.repository-list }}"; do
           echo $REPO
           cd $REPO
           python3 ${wd}/scripts/lint_repo.py
