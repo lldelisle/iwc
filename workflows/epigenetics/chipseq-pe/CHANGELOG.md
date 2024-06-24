@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.11] 2024-05-27
+
+do nothing
+
 ## [0.10] 2024-05-27
 
 ### Automatic update
