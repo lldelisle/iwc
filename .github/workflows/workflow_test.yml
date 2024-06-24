@@ -46,10 +46,11 @@ jobs:
         repository-list: "${{ needs.setup.outputs.repository-list }}"
     - name: IWC specific lint
       run: |
+        wd=$PWD/
         for REPO in ${{ needs.setup.outputs.repository-list }}; do
           echo $REPO
           cd $REPO
-          python3 scripts/lint_repo.py
+          python3 ${wd}/scripts/lint_repo.py
           cd -
         done
 
